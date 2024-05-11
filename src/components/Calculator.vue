@@ -40,7 +40,7 @@ function changeSymbol() {
 </script>
 
 <template>
-    <form @submit.prevent class=" bg-light">
+    <form @submit.prevent class="bg-light p-4 rounded-3">
         <div class="row mt-4 justify-content-between align-items-center">
             <div class="col-5">
                 <input class="text-center w-100 rounded-2 bg-dark border-0" required type="number"
@@ -55,7 +55,7 @@ function changeSymbol() {
             </div>
         </div>
         <div class="row mt-2 align-items-center justify-content-around">
-            <div class="col-7 text-center">
+            <div class="col-7 text-center p-0">
                 <label class="lead">Selecione a operação:</label>
             </div>
             <div class="col-5">
@@ -69,7 +69,7 @@ function changeSymbol() {
             </div>
         </div>
     </form>
-    <div class="row mt-4 justify-content-start">
+    <div class="row mt-2 bg-light p-4 rounded-3">
         <div class="col">
             <p class="lead">Resultado: {{ estado.result }}</p>
         </div>
